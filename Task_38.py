@@ -3,9 +3,7 @@
 Пользователь также может ввести имя или фамилию, и Вы должны реализовать функционал
 для изменения и удаления данных.
 '''
-
 import json
-
 def load_phonebook():
     try:
         with open('phonebook.json', 'r',  encoding='utf-8') as file:
