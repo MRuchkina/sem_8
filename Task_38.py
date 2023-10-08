@@ -8,7 +8,7 @@ import json
 
 def load_phonebook():
     try:
-        with open('phonebook.json') as file:
+        with open('phonebook.json', 'r',  encoding='utf-8') as file:
             return json.load(file)
     except FileNotFoundError:
         return {}
