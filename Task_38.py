@@ -14,9 +14,8 @@ def load_phonebook():
         return {}
 
 def save_phonebook(phonebook):
-    with open('phonebook.json', 'w') as file:
+    with open('phonebook.json', 'w', encoding='utf-8') as file:
         json.dump(phonebook, file)
-
 def add_contact():
     name = input("Введите имя: ")
     number = input("Введите номер телефона: ")
