@@ -4,7 +4,6 @@
 для изменения и удаления данных.
 '''
 import json
-
 def load_phonebook():
     try:
         with open('phonebook.json', 'r',  encoding='utf-8') as file:
